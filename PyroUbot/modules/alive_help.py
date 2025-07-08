@@ -158,7 +158,7 @@ async def user_help_inline(client, inline_query):
     SH = await ubot.get_prefix(inline_query.from_user.id)
     msg = f"""<blockquote><b>ᴍɪᴜɴ ᴜsᴇʀʙᴏᴛ</b>
 <b>ᴜsᴇʀ: <a href=tg://user?id={inline_query.from_user.id}>{inline_query.from_user.first_name} {inline_query.from_user.last_name or ''}</a></b>
-<b>ᴏᴡɴᴇʀ: @bloodskil2</b>
+<b>ᴏᴡɴᴇʀ: @yaetiem</b>
 <b>➠ ᴘʟᴜɢɪɴs: {len(HELP_COMMANDS)}</b>
 <b>ᴘʀᴇꜰɪxᴇs: {' '.join(SH)}</b></blockquote>"""
     results = [InlineQueryResultArticle(
