@@ -187,7 +187,7 @@ async def help_callback(client, callback_query):
     SH = await ubot.get_prefix(callback_query.from_user.id)
     top_text = f"""<blockquote><b>ᴍɪᴜɴ ᴜsᴇʀʙᴏᴛ</b>
 <b>ᴜsᴇʀ: <a href=tg://user?id={callback_query.from_user.id}>{callback_query.from_user.first_name} {callback_query.from_user.last_name or ''}</a></b>
-<b>ᴏᴡɴᴇʀ: @bloodskil2</b>
+<b>ᴏᴡɴᴇʀ: @yaetiem</b>
 <b>ᴘʟᴜɢɪɴs: {len(HELP_COMMANDS)}</b>
 <b>ᴘʀᴇꜰɪxᴇs: {' '.join(SH)}</b></blockquote>"""
 
