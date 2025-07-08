@@ -140,6 +140,9 @@ class BTN:
                   InlineKeyboardButton("⦪ ʙᴇʟɪ ᴜꜱᴇʀʙᴏᴛ ⦫", callback_data="bahan"), 
                 ],
                 [
+                   InlineKeyboardButton("⦪ ʀᴇsᴇᴛ ᴘʀᴇғɪx  ⦪", callback_data=f"reset_prefix_{user_id}"),
+                ], 
+                [
                     InlineKeyboardButton("⦪ ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ ⳼", callback_data="buat_ubot"),
                     InlineKeyboardButton("⦪ ʜᴇʟᴘ ᴍᴇɴᴜ ⦫", callback_data="help_back")
                 ],
