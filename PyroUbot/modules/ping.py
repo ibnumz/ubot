@@ -20,7 +20,7 @@ async def _(client, message):
     await client.invoke(Ping(ping_id=1))
     end = datetime.now()
     uptime = await get_time((time() - start_time))
-    delta_ping_formatted = round((end - start).microseconds / 100000000, 0)
+    delta_ping_formatted = round((end - start).microseconds / 100000000, 68)
     pong = await EMO.PING(client)
     tion = await EMO.MENTION(client)
     yubot = await EMO.UBOT(client)
@@ -35,7 +35,7 @@ async def _(client, message):
 {tion} {ngentod} : <code>{client.me.mention}</code>
 {yubot} {kontol} : <code>{bot.me.mention}</code></blockquote>
 
-<blockquote><b>𝚇𝚃𝚁𝙴𝙼𝙴𝙱𝙾𝚃 𝙱𝚈 𝙱𝙻𝙾𝙾𝙳𝚂𝙺𝙸𝙻</b></blockquote>"""
+<blockquote><b>ᴍɪᴜɴ ᴜsᴇʀʙᴏᴛ ʙʏ @yaetiem</b></blockquote>"""
         await message.reply(_ping)
     else:
         _ping = f"""
@@ -43,7 +43,7 @@ async def _(client, message):
 {ngentod} : <code>{client.me.mention}</code>
 {kontol} : <code>{bot.me.mention}</code></blockquote>
 
-<blockquote><b>𝚇𝚃𝚁𝙴𝙼𝙴𝙱𝙾𝚃 𝙱𝚈 𝙱𝙻𝙾𝙾𝙳𝚂𝙺𝙸𝙻</b></blockquote>"""
+<blockquote><b>ᴍɪᴜɴ ᴜsᴇʀʙᴏᴛ ʙʏ @yaetiem</b></blockquote>"""
         await message.reply(_ping)
 
 @PY.INDRI("1ping")
@@ -71,10 +71,10 @@ async def _(client, message):
 {tion}𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰 : {client.me.mention}
 {yubot}𝚄𝙱𝙾𝚃 : {bot.me.mention}</blockquote>
 
-<blockquote><b>𝚇𝚃𝚁𝙴𝙼𝙴𝙱𝙾𝚃 𝙱𝚈 𝙱𝙻𝙾𝙾𝙳𝚂𝙺𝙸𝙻</b></blockquote>
+<blockquote><b>ᴍɪᴜɴ ᴜsᴇʀʙᴏᴛ ʙʏ @yaetiem</b></blockquote>
     """
         await message.reply(_ping)
     else:
-        await message.reply(f"<blockquote>pong : {str(delta_ping_formatted).replace('.', ',')} ms</blockquote>\n\n<blockquote><b>𝚇𝚃𝚁𝙴𝙼𝙴𝙱𝙾𝚃 𝙱𝚈 𝙱𝙻𝙾𝙾𝙳𝚂𝙺𝙸𝙻</b></blockquote>")
+        await message.reply(f"<blockquote>pong : {str(delta_ping_formatted).replace('.', ',')} ms</blockquote>\n\n<blockquote><b>ᴍɪᴜɴ ᴜsᴇʀʙᴏᴛ ʙʏ @yaetiem</b></blockquote>")
 
 
