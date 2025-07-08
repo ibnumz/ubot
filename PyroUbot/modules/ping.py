@@ -35,7 +35,7 @@ async def _(client, message):
 {tion} {ngentod} : <code>{client.me.mention}</code>
 {yubot} {kontol} : <code>{bot.me.mention}</code></blockquote>
 
-<blockquote><b>ᴍɪᴜɴ ᴜsᴇʀʙᴏᴛ ʙʏ @yaetiem</b></blockquote>"""
+<blockquote><b>𝙸𝙱𝙽𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ʙʏ @yaetiem</b></blockquote>"""
         await message.reply(_ping)
     else:
         _ping = f"""
@@ -43,7 +43,7 @@ async def _(client, message):
 {ngentod} : <code>{client.me.mention}</code>
 {kontol} : <code>{bot.me.mention}</code></blockquote>
 
-<blockquote><b>ᴍɪᴜɴ ᴜsᴇʀʙᴏᴛ ʙʏ @yaetiem</b></blockquote>"""
+<blockquote><b>🤖𝙸𝙱𝙽𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ʙʏ @yaetiem</b></blockquote>"""
         await message.reply(_ping)
 
 @PY.INDRI("1ping")
@@ -71,10 +71,10 @@ async def _(client, message):
 {tion}𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰 : {client.me.mention}
 {yubot}𝚄𝙱𝙾𝚃 : {bot.me.mention}</blockquote>
 
-<blockquote><b>ᴍɪᴜɴ ᴜsᴇʀʙᴏᴛ ʙʏ @yaetiem</b></blockquote>
+<blockquote><b>🤖𝙸𝙱𝙽𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ʙʏ @yaetiem</b></blockquote>
     """
         await message.reply(_ping)
     else:
-        await message.reply(f"<blockquote>pong : {str(delta_ping_formatted).replace('.', ',')} ms</blockquote>\n\n<blockquote><b>ᴍɪᴜɴ ᴜsᴇʀʙᴏᴛ ʙʏ @yaetiem</b></blockquote>")
+        await message.reply(f"<blockquote>pong : {str(delta_ping_formatted).replace('.', ',')} ms</blockquote>\n\n<blockquote><b>🤖𝙸𝙱𝙽𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ʙʏ @yaetiem</b></blockquote>")
 
 
