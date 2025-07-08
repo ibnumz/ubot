@@ -67,7 +67,7 @@ async def _(client, inline_query):
 ᚗ peer_users: {users} users
 ᚗ peer_group: {group} group
 ᚗ start_uptime: {uptime}</blockquote>
-        <blockquote><b>ᣃ࿈ ᴍɪᴜɴᴜ ᴜsᴇʀʙᴏᴛ ࿈ᣄ</b></blockquote>
+        <blockquote><b>ᣃ࿈ 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙱𝚈 @yaetiem ࿈ᣄ</b></blockquote>
 """
             await client.answer_inline_query(
                 inline_query.id,
@@ -156,9 +156,9 @@ async def user_help(client, message):
 @PY.INLINE("^user_help")
 async def user_help_inline(client, inline_query):
     SH = await ubot.get_prefix(inline_query.from_user.id)
-    msg = f"""<blockquote><b>ᴍɪᴜɴ ᴜsᴇʀʙᴏᴛ</b>
+    msg = f"""<blockquote><b>𝙸𝙱𝙽𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃</b>
 <b>ᴜsᴇʀ: <a href=tg://user?id={inline_query.from_user.id}>{inline_query.from_user.first_name} {inline_query.from_user.last_name or ''}</a></b>
-<b>ᴏᴡɴᴇʀ: @yaetiem</b>
+<b>oᴡɴᴇʀ: @yaetiem</b>
 <b>➠ ᴘʟᴜɢɪɴs: {len(HELP_COMMANDS)}</b>
 <b>ᴘʀᴇꜰɪxᴇs: {' '.join(SH)}</b></blockquote>"""
     results = [InlineQueryResultArticle(
