@@ -180,7 +180,7 @@ async def help_callback(client, callback_query):
     tutup_match = re.match(r"help_tutup\((.+?)\)", callback_query.data)
     back_match = re.match(r"help_back", callback_query.data)
     SH = await ubot.get_prefix(callback_query.from_user.id)
-    top_text = f"<blockquote><b>✮ Commands Help\n ⊶ Module : {len(HELP_COMMANDS)}\n ⊶ Prefix : {' '.join(SH)}\n ⊶ User : <a href=tg://user?id={callback_query.from_user.id}>{callback_query.from_user.first_name} {callback_query.from_user.last_name or ''}</a></b></blockquote>"
+    top_text = f"<blockquote><b>✮ Commands Help\n ⊶ Module : {len(HELP_COMMANDS)}\n ⊶ Prefix : {'.'join(SH)}\n ⊶ User : <a href=tg://user?id={callback_query.from_user.id}>{callback_query.from_user.first_name} {callback_query.from_user.last_name or ''}</a></b></blockquote>"
 
     if mod_match:
         module = (mod_match.group(1)).replace(" ", "_")
