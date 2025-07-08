@@ -67,7 +67,7 @@ async def _(client, inline_query):
 ᚗ peer_users: {users} users
 ᚗ peer_group: {group} group
 ᚗ start_uptime: {uptime}</blockquote>
-        <blockquote><b>ᣃ࿈ 𝚇𝚃𝚁𝙴𝙼𝙴𝙱𝙾𝚃 𝙱𝚈 𝙱𝙻𝙾𝙾𝙳𝚂𝙺𝙸𝙻 ࿈ᣄ</b></blockquote>
+        <blockquote><b>ᣃ࿈ 𝙸𝙱𝙽𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ࿈ᣄ</b></blockquote>
 """
             await client.answer_inline_query(
                 inline_query.id,
@@ -156,7 +156,7 @@ async def user_help(client, message):
 @PY.INLINE("^user_help")
 async def user_help_inline(client, inline_query):
     SH = await ubot.get_prefix(inline_query.from_user.id)
-    msg = f"""<blockquote><b>ᴍɪᴜɴ ᴜsᴇʀʙᴏᴛ</b>
+    msg = f"""<blockquote><b>𝙸𝙱𝙽𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃</b>
 <b>ᴜsᴇʀ: <a href=tg://user?id={inline_query.from_user.id}>{inline_query.from_user.first_name} {inline_query.from_user.last_name or ''}</a></b>
 <b>ᴏᴡɴᴇʀ: @yaetiem</b>
 <b>ᴘʟᴜɢɪɴs: {len(HELP_COMMANDS)}</b>
@@ -185,7 +185,7 @@ async def help_callback(client, callback_query):
     tutup_match = re.match(r"help_tutup\((.+?)\)", callback_query.data)
     back_match = re.match(r"help_back", callback_query.data)
     SH = await ubot.get_prefix(callback_query.from_user.id)
-    top_text = f"""<blockquote><b>ᴍɪᴜɴ ᴜsᴇʀʙᴏᴛ</b>
+    top_text = f"""<blockquote><b>𝙸𝙱𝙽𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃</b>
 <b>ᴜsᴇʀ: <a href=tg://user?id={inline_query.from_user.id}>{inline_query.from_user.first_name} {inline_query.from_user.last_name or ''}</a></b>
 <b>ᴏᴡɴᴇʀ: @yaetiem</b>
 <b>ᴘʟᴜɢɪɴs: {len(HELP_COMMANDS)}</b>
@@ -197,7 +197,7 @@ async def help_callback(client, callback_query):
         button = [[InlineKeyboardButton("♅ ʙᴀᴄᴋ ♅", callback_data="help_back")]]
         await callback_query.edit_message_text(
             text=text 
-            + '\n<u><blockquote><b>🤖ᴍɪᴜɴ ᴜsᴇʀʙᴏᴛ ʙʏ @yaetiem</b></blockquote></u>',
+            + '\n<u><blockquote><b>🤖𝙸𝙱𝙽𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ʙʏ @yaetiem</b></blockquote></u>',
             reply_markup=InlineKeyboardMarkup(button),
             disable_web_page_preview=True,
         )
